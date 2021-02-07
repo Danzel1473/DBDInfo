@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/popup_perk_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/popup_perk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="주술: 피의 호의"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/popup_perk_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="발전기를 손상시킨 후, 향후 30초동안 발전기와 상호작용하는 첫 번째 생존자는 4초 동안 자신의 위치가 드러나며, 60초 동안 약점 노출 상태에 빠진다.\n드래곤의 손아귀는 120초/100초/80초의 재사용 대기 시간을 가진다."/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/popup_perk_btn"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닫기"/>
+</LinearLayout>

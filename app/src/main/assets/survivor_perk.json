@@ -1,0 +1,520 @@
+{
+  "survivor_perk": [
+    {
+      "name": "경량화",
+      "for": "all",
+      "image": "lightweight",
+      "type": ""
+    },
+    {
+      "name": "데자뷰",
+      "for": "all",
+      "image": "dejavu",
+      "type": ""
+    },
+    {
+      "name": "동질감",
+      "for": "all",
+      "image": "kindred",
+      "type": ""
+    },
+    {
+      "name": "등골이 오싹해",
+      "for": "all",
+      "image": "spinechill",
+      "type": ""
+    },
+    {
+      "name": "미끈한 고기",
+      "for": "all",
+      "image": "slipperymeat",
+      "type": ""
+    },
+    {
+      "name": "불길한 예감",
+      "for": "all",
+      "image": "premonition",
+      "type": ""
+    },
+    {
+      "name": "아무도 버려두지 않아",
+      "for": "all",
+      "image": "nooneleftbehind",
+      "type": ""
+    },
+    {
+      "name": "약탈자의 본능",
+      "for": "all",
+      "image": "plunderersinstinct",
+      "type": ""
+    },
+    {
+      "name": "어두운 감각",
+      "for": "all",
+      "image": "darksense",
+      "type": ""
+    },
+    {
+      "name": "우린 해낼거야",
+      "for": "all",
+      "image": "wellmakeit",
+      "type": ""
+    },
+    {
+      "name": "이런 일이 일어나다니",
+      "for": "all",
+      "image": "thisisnothappening",
+      "type": ""
+    },
+    {
+      "name": "작은 사냥감",
+      "for": "all",
+      "image": "smallgame",
+      "type": ""
+    },
+    {
+      "name": "회복력",
+      "for": "all",
+      "image": "resilience",
+      "type": ""
+    },
+    {
+      "name": "희망",
+      "for": "all",
+      "image": "hope",
+      "type": ""
+    },
+    {
+      "name": "유대감",
+      "for": "드와이트",
+      "image": "bond",
+      "type": ""
+    },
+    {
+      "name": "자기 증명",
+      "for": "드와이트",
+      "image": "provethyself",
+      "type": ""
+    },
+    {
+      "name": "리더",
+      "for": "드와이트",
+      "image": "leader",
+      "type": ""
+    },
+    {
+      "name": "빠르고 조용하게",
+      "for": "메그",
+      "image": "quickquiet",
+      "type": ""
+    },
+    {
+      "name": "전력 질주",
+      "for": "메그",
+      "image": "sprintburst",
+      "type": "탈진"
+    },
+    {
+      "name": "아드레날린",
+      "for": "메그",
+      "image": "adrenaline",
+      "type": "탈진"
+    },
+    {
+      "name": "공감",
+      "for": "클로뎃",
+      "image": "empathy",
+      "type": ""
+    },
+    {
+      "name": "식물학 지식",
+      "for": "클로뎃",
+      "image": "botanyknowledge",
+      "type": ""
+    },
+    {
+      "name": "자가 치료",
+      "for": "클로뎃",
+      "image": "selfcare",
+      "type": "회복"
+    },
+    {
+      "name": "굳건한 의지",
+      "for": "제이크",
+      "image": "ironwill",
+      "type": ""
+    },
+    {
+      "name": "차분한 영혼",
+      "for": "제이크",
+      "image": "calmspirit",
+      "type": ""
+    },
+    {
+      "name": "공작원",
+      "for": "제이크",
+      "image": "saboteur",
+      "type": ""
+    },
+    {
+      "name": "균형잡힌 착지",
+      "for": "니아",
+      "image": "balancedlanding",
+      "type": "탈진"
+    },
+    {
+      "name": "세련된 회피",
+      "for": "니아",
+      "image": "urbanevasion",
+      "type": ""
+    },
+    {
+      "name": "노련함",
+      "for": "니아",
+      "image": "streetwise",
+      "type": ""
+    },
+    {
+      "name": "통찰력",
+      "for": "에이스",
+      "image": "openhanded",
+      "type": ""
+    },
+    {
+      "name": "판돈 올리기",
+      "for": "에이스",
+      "image": "uptheante",
+      "type": ""
+    },
+    {
+      "name": "비장의 패",
+      "for": "에이스",
+      "image": "aceinthehole",
+      "type": ""
+    },
+    {
+      "name": "기술자",
+      "for": "펭민",
+      "image": "technician",
+      "type": ""
+    },
+    {
+      "name": "유연함",
+      "for": "펭민",
+      "image": "lithe",
+      "type": "탈진"
+    },
+    {
+      "name": "기민함",
+      "for": "펭민",
+      "image": "alert",
+      "type": ""
+    },
+    {
+      "name": "우리는 영원히 살거야",
+      "for": "데이비드",
+      "image": "weregonnaliveforever",
+      "type": ""
+    },
+    {
+      "name": "죽기살기",
+      "for": "데이비드",
+      "image": "deadhard",
+      "type": "탈진"
+    },
+    {
+      "name": "신경 쓰지 마",
+      "for": "데이비드",
+      "image": "nomither",
+      "type": ""
+    },
+    {
+      "name": "나와 함께 춤을",
+      "for": "케이트",
+      "image": "dancewithme",
+      "type": ""
+    },
+    {
+      "name": "기회의 창",
+      "for": "케이트",
+      "image": "windowsofopportunity",
+      "type": ""
+    },
+    {
+      "name": "폭발",
+      "for": "케이트",
+      "image": "boilover",
+      "type": ""
+    },
+    {
+      "name": "교란",
+      "for": "아담",
+      "image": "diversion",
+      "type": ""
+    },
+    {
+      "name": "구조",
+      "for": "아담",
+      "image": "deliverance",
+      "type": ""
+    },
+    {
+      "name": "독학자",
+      "for": "아담",
+      "image": "autodidact",
+      "type": ""
+    },
+    {
+      "name": "부수기",
+      "for": "제프",
+      "image": "breakdown",
+      "type": ""
+    },
+    {
+      "name": "갱생 지도",
+      "for": "제프",
+      "image": "aftercare",
+      "type": ""
+    },
+    {
+      "name": "뒤틀림",
+      "for": "제프",
+      "image": "distortion",
+      "type": ""
+    },
+    {
+      "name": "연대",
+      "for": "제인",
+      "image": "solidarity",
+      "type": ""
+    },
+    {
+      "name": "침착",
+      "for": "제인",
+      "image": "poised",
+      "type": ""
+    },
+    {
+      "name": "정면충돌",
+      "for": "제인",
+      "image": "headon",
+      "type": "탈진"
+    },
+    {
+      "name": "행운",
+      "for": "유이",
+      "image": "luckybreak",
+      "type": ""
+    },
+    {
+      "name": "필요하다면 무엇이든",
+      "for": "유이",
+      "image": "anymeansnecessary",
+      "type": ""
+    },
+    {
+      "name": "탈출",
+      "for": "유이",
+      "image": "breakout",
+      "type": ""
+    },
+    {
+      "name": "비공개 조건",
+      "for": "자리나",
+      "image": "offtherecord",
+      "type": ""
+    },
+    {
+      "name": "오보",
+      "for": "자리나",
+      "image": "redherring",
+      "type": ""
+    },
+    {
+      "name": "국민을 위하여",
+      "for": "자리나",
+      "image": "forthepeople",
+      "type": ""
+    },
+    {
+      "name": "선견지명",
+      "for": "펠릭스",
+      "image": "visionary",
+      "type": ""
+    },
+    {
+      "name": "필사의 조치",
+      "for": "펠릭스",
+      "image": "desperatemeasures",
+      "type": ""
+    },
+    {
+      "name": "견고함",
+      "for": "펠릭스",
+      "image": "builttolast",
+      "type": ""
+    },
+    {
+      "name": "판단",
+      "for": "엘로디",
+      "image": "appraisal",
+      "type": ""
+    },
+    {
+      "name": "속임수",
+      "for": "엘로디",
+      "image": "deception",
+      "type": ""
+    },
+    {
+      "name": "힘찬 발버둥",
+      "for": "엘로디",
+      "image": "powerstruggle",
+      "type": ""
+    },
+    {
+      "name": "유일한 생존자",
+      "for": "로리",
+      "image": "solesurvivor",
+      "type": ""
+    },
+    {
+      "name": "집착의 대상",
+      "for": "로리",
+      "image": "objectofobsession",
+      "type": ""
+    },
+    {
+      "name": "결정적인 일격",
+      "for": "로리",
+      "image": "decisivestrike",
+      "type": ""
+    },
+    {
+      "name": "정신 차려!",
+      "for": "쿠엔틴",
+      "image": "wakeup",
+      "type": ""
+    },
+    {
+      "name": "약제학",
+      "for": "쿠엔틴",
+      "image": "pharmacy",
+      "type": ""
+    },
+    {
+      "name": "불침번",
+      "for": "쿠엔틴",
+      "image": "vigil",
+      "type": ""
+    },
+    {
+      "name": "집념",
+      "for": "탭",
+      "image": "tenacity",
+      "type": ""
+    },
+    {
+      "name": "형사의 직감",
+      "for": "탭",
+      "image": "detectiveshunch",
+      "type": ""
+    },
+    {
+      "name": "잠복 근무",
+      "for": "탭",
+      "image": "stakeout",
+      "type": ""
+    },
+    {
+      "name": "슬리퍼",
+      "for": "애쉬",
+      "image": "flipflop",
+      "type": ""
+    },
+    {
+      "name": "재정비",
+      "for": "애쉬",
+      "image": "buckleup",
+      "type": ""
+    },
+    {
+      "name": "남자의 패기",
+      "for": "애쉬",
+      "image": "mettleofman",
+      "type": ""
+    },
+    {
+      "name": "베이비시터",
+      "for": "스티브",
+      "image": "babysitter",
+      "type": ""
+    },
+    {
+      "name": "동료애",
+      "for": "스티브",
+      "image": "camaraderie",
+      "type": ""
+    },
+    {
+      "name": "새로운 활력",
+      "for": "스티브",
+      "image": "secondwind",
+      "type": "회복"
+    },
+    {
+      "name": "함께라면 더 좋지",
+      "for": "낸시",
+      "image": "bettertogether",
+      "type": ""
+    },
+    {
+      "name": "시선 고정",
+      "for": "낸시",
+      "image": "Fixated",
+      "type": ""
+    },
+    {
+      "name": "내면의 힘",
+      "for": "낸시",
+      "image": "innerstrength",
+      "type": "회복"
+    },
+    {
+      "name": "홀로 남겨진 자",
+      "for": "빌",
+      "image": "leftbehind",
+      "type": ""
+    },
+    {
+      "name": "빌려온 시간",
+      "for": "빌",
+      "image": "borrowedtime",
+      "type": ""
+    },
+    {
+      "name": "불굴",
+      "for": "빌",
+      "image": "unbreakable",
+      "type": ""
+    },
+    {
+      "name": "소울 가드",
+      "for": "쉐릴",
+      "image": "soulguard",
+      "type": ""
+    },
+    {
+      "name": "피의 협정",
+      "for": "쉐릴",
+      "image": "bloodpact",
+      "type": ""
+    },
+    {
+      "name": "억압된 동맹",
+      "for": "쉐릴",
+      "image": "repressedalliance",
+      "type": ""
+    }
+  ]
+}
