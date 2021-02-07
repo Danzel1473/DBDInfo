@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         binding.mainKillerInfoBtn.setOnClickListener(this);
         binding.mainRandomPerkBtn.setOnClickListener(this);
+        binding.mainEtcInfoBtn.setOnClickListener(this);
     }
     @Override
     public void onClick(View v){
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.main_etc_info_btn:
                 Toast etcToast = Toast.makeText(this.getApplicationContext(),"추가 예정",Toast.LENGTH_LONG);
+                etcToast.setGravity(Gravity.CENTER,0,200);
                 etcToast.show();
                 break;
         }

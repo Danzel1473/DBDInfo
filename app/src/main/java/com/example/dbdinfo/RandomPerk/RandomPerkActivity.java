@@ -21,6 +21,7 @@ public class RandomPerkActivity extends FragmentActivity {
 
         ViewPager vp = findViewById(R.id.random_perk_vp);
         RandomPerkAdapter adapter = new RandomPerkAdapter(getSupportFragmentManager());
+        vp.setOffscreenPageLimit(4);
         vp.setAdapter(adapter);
 
         TabLayout tab = findViewById(R.id.random_perk_tablayout);
