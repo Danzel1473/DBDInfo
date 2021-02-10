@@ -11,12 +11,6 @@ public class Perk implements Serializable {
         img="";
         forwho="";
     }
-    public Perk(String name,String forwho,String img,String type){
-        this.name= name;
-        this.forwho = forwho;
-        this.img = img;
-        this.type = type;
-    }
     public Perk(String name,String forwho,String img,String type,String text, int[] intforcolor){
         this.name= name;
         this.forwho = forwho;

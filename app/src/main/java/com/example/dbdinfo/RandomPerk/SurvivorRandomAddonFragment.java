@@ -136,7 +136,6 @@ public class SurvivorRandomAddonFragment extends Fragment implements View.OnClic
                     binding.survivorAddonImage1Text.setTextColor(Color.parseColor(strColor));
                     binding.survivorAddonImage1Text.setText(nowAddonList.get(0).getName());
 
-
                     if(nowAddonList.get(1).getRare().equals("평범함"))
                         strColor = "#ab713c";
                     else if(nowAddonList.get(1).getRare().equals("평범하지 않음"))

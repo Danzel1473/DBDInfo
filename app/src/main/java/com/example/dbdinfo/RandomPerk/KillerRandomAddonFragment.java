@@ -60,7 +60,6 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
 
         try {
             loadKillerList();
-            loadAddonList();
         } catch (JSONException ex) {
             ex.printStackTrace();
         } catch (IOException ex) {
@@ -77,6 +76,7 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
                 AssetManager am = getResources().getAssets();
                 List<Integer> addonNum = new ArrayList<Integer>();
                 InputStream inputStream;
+                String strColor = "init";
 
                 killerAddonList.clear();
                 nowAddonList.clear();
@@ -89,10 +89,12 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
                 binding.killerAddonKillerName.setText(nowKiller.getNick());
                 binding.killerAddonKillerImage.setImageResource(killerimg);
 
-                for(int i = 0; i < addonList.size(); i++){
-                    if (addonList.get(i).getForwho().equals(nowKiller.getNick())){
-                        killerAddonList.add(addonList.get(i));
-                    }
+                try {
+                    loadAddonList(nowKiller.getNick());
+                } catch (JSONException ex) {
+                    ex.printStackTrace();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
 
                 for (int i = 0; i < 2; i++) {
@@ -107,7 +109,7 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
                 try {
                     nowAddonList.add(killerAddonList.get(addonNum.get(0)));
                     nowAddonList.add(killerAddonList.get(addonNum.get(1)));
-                    String strColor = "init";
+
                     inputStream = am.open(nowAddonList.get(0).getImage()+".png");
 
                     if(nowAddonList.get(0).getRare().equals("평범함"))
@@ -124,7 +126,6 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
                     binding.killerAddonImage1.setImageDrawable(Drawable.createFromStream(inputStream, null));
                     binding.killerAddonImage1Text.setTextColor(Color.parseColor(strColor));
                     binding.killerAddonImage1Text.setText(nowAddonList.get(0).getName());
-
 
                     if(nowAddonList.get(1).getRare().equals("평범함"))
                         strColor = "#ab713c";
@@ -169,7 +170,7 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
 
     }
 
-    private void loadAddonList() throws IOException, JSONException {
+    private void loadAddonList(String forwho) throws IOException, JSONException {
         AssetManager am = getContext().getAssets();
         InputStream is = am.open("killer_addon.json");
         BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
@@ -181,13 +182,13 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
         String receiveMsg = buffer.toString();
 
         JSONObject jsonObject = new JSONObject(receiveMsg);
-        JSONArray jsonArray = jsonObject.getJSONArray("killer_addon");
+        JSONArray jsonArray = jsonObject.getJSONArray(forwho);
 
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject killerAddonObject = jsonArray.getJSONObject(i);
             Addon addon = new Addon(killerAddonObject.getString("name"), killerAddonObject.getString("image"),
-                    killerAddonObject.getString("for"), killerAddonObject.getString("rare"), killerAddonObject.getString("text"));
-            addonList.add(addon);
+                    killerAddonObject.getString("rare"), killerAddonObject.getString("text"));
+            killerAddonList.add(addon);
         }
 
         Log.i("DBDInfo", "살인마 애드온 리스트 개수: " + addonList.size());
