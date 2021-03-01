@@ -23,7 +23,6 @@
                 android:layout_weight="1">
                 <Button
                     android:id="@+id/main_killer_info_btn"
-                    android:background="@color/black"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -37,6 +36,7 @@
                 android:layout_weight="1">
                 <Button
                     android:id="@+id/main_random_perk_btn"
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="랜덤퍽" />
@@ -51,6 +51,7 @@
                     android:id="@+id/main_etc_info_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="기타 정보" />
             </LinearLayout>
 

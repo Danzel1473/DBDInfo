@@ -9,9 +9,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -35,6 +38,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,6 +57,20 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_killer_random_addon, container, false);
         View view = binding.getRoot();
+
+        try {
+            Field popup = Spinner.class.getDeclaredField("mPopup");
+            popup.setAccessible(true);
+
+            // Get private mPopup member variable and try cast to ListPopupWindow
+            android.widget.ListPopupWindow popupWindow = (android.widget.ListPopupWindow) popup.get(binding.killerAddonSpinner);
+
+            // Set popupWindow height to 500px
+            popupWindow.setHeight(300);
+        }
+        catch (NoClassDefFoundError | ClassCastException | NoSuchFieldException | IllegalAccessException e) {
+            // silently fail...
+        }
 
         binding.killerAddonBtn.setOnClickListener(this);
         binding.killerAddonImage1.setOnClickListener(this);
@@ -76,13 +94,18 @@ public class KillerRandomAddonFragment extends Fragment implements View.OnClickL
                 AssetManager am = getResources().getAssets();
                 List<Integer> addonNum = new ArrayList<Integer>();
                 InputStream inputStream;
+                int randomNum;
                 String strColor = "init";
 
                 killerAddonList.clear();
                 nowAddonList.clear();
+                if(binding.killerAddonSpinner.getSelectedItem().equals("랜덤")){
+                    randomNum = sharedRandom.nextInt(killerList.size());
+                    nowKiller = killerList.get(randomNum);
+                } else{
+                    nowKiller = killerList.get(binding.killerAddonSpinner.getSelectedItemPosition()-1);
+                }
 
-                int randomNum = sharedRandom.nextInt(killerList.size());
-                nowKiller = killerList.get(randomNum);
 
                 int killerimg = getContext().getResources().getIdentifier("drawable/" + nowKiller.getKillerimg(), null, getContext().getPackageName());
 

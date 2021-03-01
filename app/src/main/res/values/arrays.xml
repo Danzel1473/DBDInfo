@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="killer_name_list">
+        <item>랜덤</item>
+        <item>트래퍼</item>
+        <item>레이스</item>
+        <item>힐빌리</item>
+        <item>너스</item>
+        <item>쉐이프</item>
+        <item>해그</item>
+        <item>닥터</item>
+        <item>헌트리스</item>
+        <item>카니발</item>
+        <item>나이트메어</item>
+        <item>피그</item>
+        <item>클라운</item>
+        <item>스피릿</item>
+        <item>군단</item>
+        <item>역병</item>
+        <item>고스트 페이스</item>
+        <item>데모고르곤</item>
+        <item>악귀</item>
+        <item>데스슬링거</item>
+        <item>처형자</item>
+        <item>블라이트</item>
+        <item>쌍둥이</item>
+    </string-array>
+</resources>

@@ -64,7 +64,7 @@
                             android:id="@+id/survivor_addon_image1"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/randomperk_background"
+                            android:src="@drawable/randomaddon_background"
                             android:clickable="false"/>
                         <TextView
                             android:id="@+id/survivor_addon_image1_text"
@@ -83,7 +83,7 @@
                             android:id="@+id/survivor_addon_image2"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/randomperk_background"
+                            android:src="@drawable/randomaddon_background"
                             android:clickable="false"/>
                         <TextView
                             android:id="@+id/survivor_addon_image2_text"
